@@ -20,23 +20,32 @@
 
     <div class="container">
         <h1 class="text-center mt-2 p-2">Hero vs Villain</h1>
-            <div class="row" style="height:600px;">
-                <div class="hero d-inline h-100 col-5 bg-primary m-2 p-2">
-
+            <div class="row d-flex justify-content-around" style="height:550px;">
+                <div id="heroContainer" class="hero d-inline h-100 col-5 bg-primary m-2 p-2">  
+               
                 </div>
-                <div class="villain d-inline h-100 col-5 bg-danger m-2 p-2">
+                
+                <div id="villainContainer" class="villain d-inline h-100 col-5 bg-danger m-2 p-2">
                         
                 </div>
+                
             </div>
-
+            <br>
+                <div class="row d-flex justify-content-around" id="button-row">
+                <button id="hero-attack" class="btn btn-warning" onclick="heroAttack()">HERO-ATTACK!!</button> 
+                <button id="hero-attack" class="btn btn-warning" onclick="villainAttack()">VILLAIN-ATTACK!!</button> 
+                </div>
 
 
 
 
     </div>
+
+    
+    <script src="script.js"></script>
     
 </body>
-<script src="script.js">
+
         
 </script>
 </html>
